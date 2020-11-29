@@ -485,18 +485,20 @@ $ find src/app -name "*.[s-t]*.*"  -exec rm {} \;
 * Change the constructor with the below code 
 
 ```typescript
-    constructor(private page: Page, private routerExtensions: RouterExtensions) {
-        page.actionBarHidden = true;
+  constructor(private page: Page, private routerExtensions: RouterExtensions) {
 
-        if (isIOS) {
-            this.isIOS = true;
-            page.statusBarStyle = "light";
-        }
-        else {
-            page.backgroundSpanUnderStatusBar = true;
-            this.isIOS = false;
-        }
+    page.actionBarHidden = true;
+
+    if (isIOS) {
+        this.isIOS = true;
+        page.statusBarStyle = "light";
     }
+    else {
+        page.backgroundSpanUnderStatusBar = true;
+        this.isIOS = false;
+    }
+
+  }
 ```
 
 # Libraries
