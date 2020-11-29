@@ -104,7 +104,7 @@ $ find src/app -name "*.[s-t]*.*"  -exec rm {} \;
 
 :bulb: Final Result
 
-```
+```typescript
 import { Component, OnInit } from "@angular/core";
 import { RouterExtensions } from "@nativescript/angular";
 import { EventData, SearchBar } from "@nativescript/core";
