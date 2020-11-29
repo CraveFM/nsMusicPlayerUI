@@ -1,6 +1,12 @@
 # Music Player UI
 
 
+https://play.nativescript.org/?template=play-ng&id=EaETCw&v=54
+
+![image](https://raw.githubusercontent.com/NativeScript/code-samples/master/screens/music-player-ui.gif)
+
+## :o: Create a project by using a template
+
 
 Example taken from [:bookmark:`nativescript.rocks`](https://plugins.nativescript.rocks/samples) and can be used as a template since it has already been converted to [NativeScript 7](https://nativescript.org/blog/nativescript-7-announcement)
 
@@ -8,9 +14,14 @@ Example taken from [:bookmark:`nativescript.rocks`](https://plugins.nativescript
 $ ns create nsMusicPlayerUI --template https://github.com/CraveFM/nsMusicPlayerUI
 ```
 
-https://play.nativescript.org/?template=play-ng&id=EaETCw&v=54
 
-![image](https://raw.githubusercontent.com/NativeScript/code-samples/master/screens/music-player-ui.gif)
+## :a: From Scratch
+
+* Create a blank NativeScript/Angular/sass project
+
+```
+% ns create nsMusicPlayerUI --template @nativescript/template-blank-ng
+```
 
 ## Configure
 
