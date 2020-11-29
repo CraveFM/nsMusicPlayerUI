@@ -70,6 +70,39 @@ The `images` folder will be copied to the final tarballs
 $ find src/app -name "*.[s-t]*.*"  -exec rm {} \;
 ```
 
+## :a: Component
+
+- [ ] Open the `home.component.ts` file,
+
+* add the instance variables before the constructor:
+
+```html
+    textFieldValue: string = "";
+    searchPhrase: string;
+```
+
+* Add the RouterExtensions to the constructor
+
+```typescript
+    constructor(private routerExtensions: RouterExtensions) {
+        // Use the component constructor to inject providers.
+    }
+```
+
+* Add the below methods after `ngOnInit` method
+
+```typescript
+    onSearchSubmit(args: EventData): void {
+        let searchBar = <SearchBar>args.object;
+        console.log("You are searching for " + searchBar.text);
+    }
+    
+    onTaylorSwiftTap(): void {
+        this.routerExtensions.navigate(["/detail"]);
+    }
+```
+
+
 # Libraries
 
 ## :one: Free ** [Progress NativeScript UI](https://github.com/ProgressNS/nativescript-ui-samples)
