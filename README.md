@@ -430,14 +430,13 @@ export class HomeComponent implements OnInit {
 % ng generate component detail --skipTests=true 
 ```
 
-- [ ] Lets remove the `spec` and `tns` files
+* Lets remove the `spec` and `tns` files that are not needed
 
 ```
 $ find src/app -name "*.[s-t]*.*"  -exec rm {} \;
 ```
 
-
-* Add the instance variables before the `constructor`
+* Add the instance variables before the `constructor` to the `detail.component.ts` class file
 
 ```typescript
     textFieldValue: string = "";
@@ -481,6 +480,23 @@ $ find src/app -name "*.[s-t]*.*"  -exec rm {} \;
             imageUrl: "~/images/layer24@3x.png"
         },
     ]
+```
+
+* Change the constructor with the below code 
+
+```typescript
+    constructor(private page: Page, private routerExtensions: RouterExtensions) {
+        page.actionBarHidden = true;
+
+        if (isIOS) {
+            this.isIOS = true;
+            page.statusBarStyle = "light";
+        }
+        else {
+            page.backgroundSpanUnderStatusBar = true;
+            this.isIOS = false;
+        }
+    }
 ```
 
 # Libraries
