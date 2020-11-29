@@ -64,6 +64,11 @@ The `images` folder will be copied to the final tarballs
 % ng generate component detail --skipTests=true 
 ```
 
+- [ ] Lets remove the `spec` and `tns` files
+
+```
+$ find src/app -name "*.[s-t]*.*"  -exec rm {} \;
+```
 
 # Libraries
 
