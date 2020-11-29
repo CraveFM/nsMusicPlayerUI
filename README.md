@@ -769,9 +769,23 @@ export class AppModule { }
 
 ```
 
+- [ ] `app.css` Edit
+
+```
+.btn {
+    font-size: 18;
+}
+
+.fa {
+    font-family: "FontAwesome"
+}
+```
+
 # Resources
 
-Copy the image files in `src/images` directory
+* Copy the image files in `src/images` directory
+
+* Copy the font files in `src/fonts` directory
 
 # Libraries
 
