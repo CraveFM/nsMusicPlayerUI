@@ -613,6 +613,60 @@ ActionBar{
   }
 ```
 
+## :ab: App Module
+
+- [ ] `app.routing.module.ts` Edit 
+
+```typescript
+import { NgModule } from "@angular/core";
+import { Routes } from "@angular/router";
+import { NativeScriptRouterModule } from "@nativescript/angular";
+import { DetailComponent } from "./detail/detail.component";
+
+const routes: Routes = [
+    { path: "", redirectTo: "/home", pathMatch: "full" },
+    { path: "home", loadChildren: () => import("~/app/home/home.module").then((m) => m.HomeModule) },
+    { path: "detail", component: DetailComponent}
+];
+
+@NgModule({
+    imports: [NativeScriptRouterModule.forRoot(routes)],
+    exports: [NativeScriptRouterModule]
+})
+export class AppRoutingModule { }
+```
+
+- [ ] `app.module.ts` Edit 
+
+``typescript
+import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
+import { NativeScriptModule } from "@nativescript/angular";
+
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { DetailComponent } from "./detail/detail.component";
+
+@NgModule({
+    bootstrap: [
+        AppComponent
+    ],
+    imports: [
+        NativeScriptModule,
+        AppRoutingModule
+    ],
+    declarations: [
+        AppComponent,
+        DetailComponent
+    ],
+    schemas: [
+        NO_ERRORS_SCHEMA
+    ]
+})
+export class AppModule { }
+
+```
+
+
 # Libraries
 
 ## :one: Free ** [Progress NativeScript UI](https://github.com/ProgressNS/nativescript-ui-samples)
