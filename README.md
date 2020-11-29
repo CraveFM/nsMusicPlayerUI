@@ -23,8 +23,6 @@ $ ns create nsMusicPlayerUI --template https://github.com/CraveFM/nsMusicPlayerU
 
 ## Configure
 
-## :b: Créer le service
-
 ##### :bangbang: Installing Angular CLI
 
 The project uses `Angular` CLI, if not install on your machine use the below command:
