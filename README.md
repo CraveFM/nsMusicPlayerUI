@@ -5,6 +5,8 @@ https://play.nativescript.org/?template=play-ng&id=EaETCw&v=54
 
 ![image](https://raw.githubusercontent.com/NativeScript/code-samples/master/screens/music-player-ui.gif)
 
+An app design for an engaging music player app.
+
 ## :o: Create a project by using a template
 
 
