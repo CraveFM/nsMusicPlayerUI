@@ -70,9 +70,53 @@ The `images` folder will be copied to the final tarballs
 $ find src/app -name "*.[s-t]*.*"  -exec rm {} \;
 ```
 
-## :a: Component
+## :a: Home Component
 
-- [ ] Open the `home.component.ts` file,
+- [ ] Create a new `home.component.css` stylesheet file,
+
+```css
+ActionBar{
+    background-color:transparent;
+  }
+  
+  /* #home-page-background{        
+      background: linear-gradient(to bottom, #44557f 15%, #f8f8f8 15%);
+  } */
+  
+  .album-image{
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .home-panel{
+      vertical-align: center; 
+      font-size: 20;
+      margin: 15;
+  }
+  
+  .description-label{
+      margin-bottom: 15;
+  }
+  
+  #searchRow{
+      margin-top: 20;
+  }
+```
+
+* Save the file under the `src/app/home` directory
+
+- [ ] Open the `home.component.ts` class file,
+
+* add the `styleUrls` property to the `@Component` Decorator:
+
+```typescript
+@Component({
+    selector: "Home",
+    templateUrl: "./home.component.html",
+    styleUrls: ['./home.component.css']
+})
+```
 
 * add the instance variables before the constructor:
 
@@ -111,7 +155,8 @@ import { EventData, SearchBar } from "@nativescript/core";
 
 @Component({
     selector: "Home",
-    templateUrl: "./home.component.html"
+    templateUrl: "./home.component.html",
+    styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
 
