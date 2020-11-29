@@ -595,6 +595,23 @@ $ find src/app -name "*.[s-t]*.*"  -exec rm {} \;
         </GridLayout>
     </StackLayout>
 </GridLayout>
+```
+
+- [ ] Edit the Detail Component Stylesheet
+
+```css
+ActionBar{
+    background-color:transparent;
+  }
+  
+  #detail-page-background{        
+    background-image: url("~/images/layer18.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* margin-top:-30; */
+  }
+```
 
 # Libraries
 
