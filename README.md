@@ -2,9 +2,9 @@
 
 ![image](https://raw.githubusercontent.com/NativeScript/code-samples/master/screens/music-player-ui.gif)
 
-An app design for an engaging music player app.
 
-[<img src="https://github.com/angular/angular/blob/master/aio/src/assets/images/logos/angular/angular.png" width="31" height="31"></img>](https://play.nativescript.org/?template=play-ng&id=EaETCw&v=54) 
+
+[<img src="https://github.com/angular/angular/blob/master/aio/src/assets/images/logos/angular/angular.png" width="31" height="31"></img>](https://play.nativescript.org/?template=play-ng&id=EaETCw&v=54) An app design for an engaging music player app.
 
 ## :o: Create a project by using a template
 
