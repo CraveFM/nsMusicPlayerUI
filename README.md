@@ -168,6 +168,9 @@ export class HomeComponent implements OnInit {
         this.routerExtensions.navigate(["/detail"]);
     }
 
+    onButtonTap(): void {
+        console.log("Button was pressed");
+    }
 }
 ```
 
