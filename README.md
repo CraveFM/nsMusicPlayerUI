@@ -12,7 +12,17 @@ https://play.nativescript.org/?template=play-ng&id=EaETCw&v=54
 
 ![image](https://raw.githubusercontent.com/NativeScript/code-samples/master/screens/music-player-ui.gif)
 
-webpack.config.js
+## Configure
+
+- [ ] Edit the file `webpack.config.js`, add the `images` section to the `copyTargets` variable
+
+The `images` folder will be copied to the final tarballs
+
+```
+    { from: 'images/**', noErrorOnMissing: true, globOptions: { dot: false, ...copyIgnore } },
+```
+
+:bulb: Final Result of `copyTargets` variable
 
 ```
   const copyTargets = [
