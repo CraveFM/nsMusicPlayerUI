@@ -783,9 +783,28 @@ export class AppModule { }
 
 # Resources
 
-* Copy the image files in `src/images` directory
+- [ ] Fonts
 
-* Copy the font files in `src/fonts` directory
+* copy `fonts` folder to the `src` directory
+
+- [ ] Photos
+
+* copy `images` folder to the `src` directory
+
+- [ ] Edit `webpack.config.js` file
+
+* locate the `copyTargets` variable and add the `from: 'images/**'` JSON section like below
+
+```javascript
+const copyTargets = [
+    { from: 'assets/**', noErrorOnMissing: true, globOptions: { dot: false, ...copyIgnore } },
+    { from: 'fonts/**', noErrorOnMissing: true, globOptions: { dot: false, ...copyIgnore } },
+    { from: 'images/**', noErrorOnMissing: true, globOptions: { dot: false, ...copyIgnore } },
+    ...copyReplacements
+  ];
+```
+
+* 
 
 # Libraries
 
